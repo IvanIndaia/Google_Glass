@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Java Script</title>
+    <script>
+        function acendeLampada() {
+            document.getElementById("lamp").src="_images/JS/Lamp.Acesa.png";
+        }
+        function apagueLampada() {
+            document.getElementById("lamp").src="_images/JS/Lamp.Apagada.png";
+        }
+        function breakLampada() {
+            document.getElementById("lamp").src="_images/JS/Lamp.Brake.png";
+        }
+    </script>
+</head>
+<body>
+    <h1 style="font-size: 35pt;" >Acenda a Lâmpada</h1>
+    <img src="_images/JS/Lamp.Apagada.png" id="lamp" onmousemove="acendeLampada()" onmouseout="apagueLampada()" onclick="breakLampada()"/>
+</body>
+</html>
