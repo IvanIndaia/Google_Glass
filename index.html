@@ -7,13 +7,8 @@
     <title>Curso HTML5</title>
     <link rel="shortcut icon" href="icons/favicon223423.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-
+    <script language="javascript" src="js/funcoes.js"></script>
 </head>
-<script>
-    function mudaFoto (foto){
-        document.getElementById("icone").src=""
-    }
-</script>
 <body>
 <div id="interface">
     <header id="cabecalho">
@@ -27,11 +22,16 @@
         <h1>Menu Principal</h1>
     <!--<ol type="1" start="3"> -->
     <ul type="circle">
-        <li onmouseover="mudaFoto('')"><a href="index.html">Home</a></li>
-        <li><a href="specs.html">Especificações</a></li>
-        <li><a href="fotos.html">Fotos</a></li>
-        <li><a href="multimidia.html">Multimídia</a></li>
-        <li><a href="fale-conosco.html">Fale Conosco</a></li>
+        <li onmouseover="mudaFoto('images/JS/Home.png')" onmouseout="mudaFoto('images/future-glasses.png')">
+            <a href="index.html">Home</a></li>
+        <li onmouseover="mudaFoto('images/JS/Especificacoes.png')" onmouseout="mudaFoto('images/future-glasses.png')">
+            <a href="specs.html">Especificações</a></li>
+        <li onmouseover="mudaFoto('images/JS/Camera.png')" onmouseout="mudaFoto('images/future-glasses.png')">
+            <a href="fotos.html">Fotos</a></li>
+        <li onmouseover="mudaFoto('images/JS/Multimídia.png')" onmouseout="mudaFoto('images/future-glasses.png')">
+            <a href="multimidia.html">Multimídia</a></li>
+        <li onmouseover="mudaFoto('images/JS/Fale-Conosco.png')" onmouseout="mudaFoto('images/future-glasses.png')">
+            <a href="fale-conosco.html">Fale Conosco</a></li>
     </ul>
     </nav>        
     </header>
